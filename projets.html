@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projets — Tehani DESIREE-LAGUERRE</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Bebas+Neue&family=DM+Sans:wght@300;400;500&family=Libre+Baskerville:ital@1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+  <a href="#contenu" class="skip-link">Accéder au contenu</a>
+
+  <!-- NAV -->
+  <nav aria-label="Navigation principale">
+     <img src="images/caraibelogo.jpg" alt="Tehani Desiree-Laguerre" class="nav-logo-img"/>
+    <ul class="nav-links" role="list">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="projets.html" aria-current="page">Projets</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+       <button id="theme-toggle" aria-label="Passer en mode sombre" title="Changer le thème">☾</button>
+    <button class="burger" id="burger" aria-expanded="false" aria-controls="mobile-menu" aria-label="Ouvrir le menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <nav class="mobile-menu" id="mobile-menu" aria-label="Menu mobile" aria-hidden="true">
+    <a href="index.html" class="mobile-nav-link">Accueil</a>
+    <a href="projets.html" class="mobile-nav-link">Projets</a>
+    <a href="contact.html" class="mobile-nav-link">Contact</a>
+  </nav>
+
+  <main id="contenu">
+
+    <!-- ==================== PROJETS ==================== -->
+    <section id="projets" aria-labelledby="titre-projets">
+
+      <div class="projets-header fade-up">
+        <div class="projets-title-block">
+          <br>
+          <h1 class="section-title-mag" id="titre-projets">
+            MES<br>PROJETS
+          </h1>
+        </div>
+      </div>
+
+      <!-- Filtres -->
+      <div class="filtres" role="group" aria-label="Filtrer les projets">
+        <button class="filtre-btn actif" data-filtre="tous">Tous</button>
+        <button class="filtre-btn" data-filtre="création logo">Logo</button>
+        <button class="filtre-btn" data-filtre="web">Web</button>
+        <button class="filtre-btn" data-filtre="communication">Communication</button>
+        <button class="filtre-btn" data-filtre="photoshop">Photoshop</button>
+         <button class="filtre-btn" data-filtre="audiovisuel">audiovisuel</button>
+      </div>
+
+      <!-- Grille -->
+      <div class="projets-grid" id="projets-grid">
+
+        <article class="projet-carte fade-up" data-tags="création logo" tabindex="0" aria-label="Création Logo">
+          <img src="images/EX02_02.pdf.jpg" alt="Création de logo pour un peintre" class="projet-image">
+          <div class="projet-contenu">
+            <p class="projet-num">No. 01</p>
+            <h2 class="projet-titre">Création Logo</h2>
+            <p class="projet-description">Design d'une identité visuelle moderne pour un peintre.</p>
+            <div class="projet-tags"><span class="tag">Logo</span><span class="tag">Canva</span></div>
+            <a href="https://drive.google.com/file/d/16bA6VJGASc6rKwWf0QYogWC3_4jUY81u/view?usp=drive_link"
+               target="_blank" rel="noopener noreferrer" class="btn-pdf" aria-label="Voir le PDF du projet Création Logo">Voir le PDF</a>
+          </div>
+        </article>
+
+        <article class="projet-carte fade-up" data-tags="création logo" tabindex="0" aria-label="Charte Graphique">
+          <img src="images/logo%201.png" alt="Charte graphique — identité de marque" class="projet-image">
+          <div class="projet-contenu">
+            <p class="projet-num">No. 02</p>
+            <h2 class="projet-titre">Charte Graphique</h2>
+            <p class="projet-description">Création d'une identité visuelle complète — marque & réglementation.</p>
+            <div class="projet-tags"><span class="tag">Logo</span><span class="tag">Canva</span></div>
+            <a href="https://drive.google.com/file/d/1E2x4xhFIyNypBgzakz_z4-Kieucf1vIo/view?usp=drive_link"
+               target="_blank" rel="noopener noreferrer" class="btn-pdf" aria-label="Voir le PDF de la Charte graphique">Voir le PDF</a>
+          </div>
+        </article>
+
+        <article class="projet-carte fade-up" data-tags="communication" tabindex="0" aria-label="Campagne Visuelle">
+          <img src="images/1.jpg" alt="Campagne visuelle pour les réseaux sociaux" class="projet-image">
+          <div class="projet-contenu">
+            <p class="projet-num">No. 03</p>
+            <h2 class="projet-titre">Campagne Visuelle</h2>
+            <p class="projet-description">Création de visuels pour les réseaux sociaux.</p>
+            <div class="projet-tags"><span class="tag">Communication</span><span class="tag">Canva</span></div>
+            <a href="https://drive.google.com/file/d/1F9uno98rXUka0NFYkTPpDM_e6A5_EsaM/view?usp=drive_link"
+               target="_blank" rel="noopener noreferrer" class="btn-pdf" aria-label="Voir le PDF de la Campagne Visuelle">Voir le PDF</a>
+          </div>
+        </article>
+
+        <article class="projet-carte fade-up" data-tags="photoshop" tabindex="0" aria-label="Portrait Plastique">
+          <img src="images/faces2.png" alt="Portrait plastique réalisé avec Photoshop" class="projet-image">
+          <div class="projet-contenu">
+            <p class="projet-num">No. 04</p>
+            <h2 class="projet-titre">Portrait Plastique</h2>
+            <p class="projet-description">Création d'un portrait plastique expérimental avec Photoshop.</p>
+            <div class="projet-tags"><span class="tag">Photoshop</span><span class="tag">Montage</span></div>
+          <a href="https://drive.google.com/file/d/1iMtiLGx8YQ-XzBdTRU7V2AH25Xg_9jA5/view?usp=share_link"
+               target="_blank" rel="noopener noreferrer" class="btn-pdf" aria-label="Voir le PDF de la Campagne Visuelle">Voir le PDF</a>
+          </div>
+        </article>
+
+        <article class="projet-carte fade-up" data-tags="web" tabindex="0" aria-label="MAREÏS">
+          <div class="projet-contenu projet-contenu--no-img">
+            <p class="projet-num">No. 05</p>
+            <h2 class="projet-titre projet-titre--xl">MAREÏS</h2>
+            <p class="projet-description">Site vitrine pour une association locale. <br> design & développement web.</p>
+            <div class="projet-tags"><span class="tag">Web</span><span class="tag">HTML/CSS</span></div>
+          <a href="https://sallyanicet-gif.github.io/sae-1.05/index.html"
+               target="_blank" rel="noopener noreferrer" class="btn-pdf" aria-label="Voir le site vitrine de l'association">Voir le site</a>
+          </div>
+        </article>
+        
+      <article class="projet-carte fade-up" data-tags="communication" tabindex="0" aria-label="clearvita">
+          <img src="images/clearvita.png" alt="presentation de clearvita" class="projet-image">
+          <div class="projet-contenu">
+            <p class="projet-num">No. 06</p>
+            <h2 class="projet-titre">CLEARVITA</h2>
+            <p class="projet-description">Création d'un produit eco-friendly.</p>
+            <div class="projet-tags"><span class="tag">communication</span><span class="tag">création</span> <span class="tag">Anglais</span></div>
+          <a href="https://drive.google.com/file/d/1HI8xqLVQ_pO_yeyH7oK-s7YxECY6h4Sl/view?usp=share_link"
+               target="_blank" rel="noopener noreferrer" class="btn-pdf" aria-label="Voir le PDF de la Campagne Visuelle">Voir le PDF</a>
+          </div>
+        </article>
+        
+         <article class="projet-carte fade-up" data-tags="audiovisuel" tabindex="0" aria-label="clearvita">
+          <img src="images/thriller.png" alt="production audiovisuel" class="projet-image">
+          <div class="projet-contenu">
+            <p class="projet-num">No. 07</p>
+            <h2 class="projet-titre">Court métrage</h2>
+            <p class="projet-description">Création d'une production audiovisuel.</p>
+            <div class="projet-tags"><span class="tag">audiovisuel</span><span class="tag">création</span> </div>
+          <a href="https://drive.google.com/file/d/1-Cq2IMaL7l8SmaZmxUVSKXMom-cbEmRu/view?usp=sharing"
+               target="_blank" rel="noopener noreferrer" class="btn-pdf" aria-label="Voir le PDF de la Campagne Visuelle">Voir la vidéo</a>
+          </div>
+        </article>
+        
+      </div>
+    </section>
+      
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <small>© <span id="annee"></span> Tehani DESIREE-LAGUERRE — BUT MMI</small>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
