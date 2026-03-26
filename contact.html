@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact — Tehani DESIREE-LAGUERRE</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Bebas+Neue&family=DM+Sans:wght@300;400;500&family=Libre+Baskerville:ital@1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+  <a href="#contenu" class="skip-link">Accéder au contenu</a>
+
+  <!-- NAV -->
+  <nav aria-label="Navigation principale">
+     <img src="images/caraibelogo.jpg" alt="Tehani Desiree-Laguerre" class="nav-logo-img"/>
+
+    <ul class="nav-links" role="list">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="projets.html" aria-current="page">Projets</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+       <button id="theme-toggle" aria-label="Passer en mode sombre" title="Changer le thème">☾</button>
+    <button class="burger" id="burger" aria-expanded="false" aria-controls="mobile-menu" aria-label="Ouvrir le menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <nav class="mobile-menu" id="mobile-menu" aria-label="Menu mobile" aria-hidden="true">
+    <a href="index.html" class="mobile-nav-link">Accueil</a>
+    <a href="projets.html" class="mobile-nav-link">Projets</a>
+    <a href="contact.html" class="mobile-nav-link">Contact</a>
+  </nav>
+
+
+  <main id="contenu">
+
+    <!-- ==================== CONTACT ==================== -->
+    <section id="contact" aria-labelledby="titre-contact">
+      <div class="contact-inner">
+
+        <div class="contact-left fade-up">
+          <h1 class="section-title-mag" id="titre-contact">
+            PARLONS<br><em>ensemble</em>
+          </h1>
+          <p class="contact-editorial">
+            Disponible pour toute offres. 
+          <!-- Liens directs -->
+          <div class="contact-links-direct">
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" class="contact-link" aria-label="LinkedIn de Tehani">
+              <span class="contact-icon" aria-hidden="true">IN</span>
+              <span><span class="contact-label">LinkedIn</span>Tehani Desiree-Laguerre</span>
+            </a>
+            <a href="mailto:tehani.grenon@edu.univ-antilles.fr" class="contact-link" aria-label="Email de Tehani">
+              <span class="contact-icon" aria-hidden="true">✉</span>
+              <span><span class="contact-label">Email</span>desiretehani971@gmail.com</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Formulaire -->
+        <div class="fade-up">
+          <p class="sc-label" style="color:var(--gris); margin-bottom:2rem;">Envoyer un message</p>
+          <form action="#" method="post" novalidate aria-label="Formulaire de contact">
+
+            <div class="form-group">
+              <label class="form-label" for="contact-nom">Nom</label>
+              <input class="form-input" id="contact-nom" name="nom" type="text" required autocomplete="name" placeholder="Votre nom">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="contact-email">Email</label>
+              <input class="form-input" id="contact-email" name="email" type="email" required autocomplete="email" placeholder="votre@email.com">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="contact-message">Message</label>
+              <textarea class="form-textarea" id="contact-message" name="message" maxlength="280" placeholder="Votre message..."></textarea>
+              <p class="char-count">Reste : <span id="restant">280</span> caractères</p>
+            </div>
+
+            <button type="submit" class="btn-envoyer">Envoyer</button>
+
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <small>© <span id="annee"></span> Tehani DESIREE-LAGUERRE — BUT MMI</small>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
